@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Vitatake</string>
+    <string name="btnWelcome_text">Lets get started</string>
+
+    <string name="userCal_title">User calibration</string>
+    <string name="userCal_personal_info">Personal Information</string>
+    <string name="userCal_age">Age</string>
+    <string name="userCal_gender">Gender</string>
+    <string name="userCal_physical_attributes">Physical Attributes</string>
+    <string name="userCal_height">Height</string>
+    <string name="userCal_weight">Weight</string>
+    <string name="userCal_finish">Finish</string>
+    <string name="userCal_delimiter">--------------------------------------</string>
+</resources>
