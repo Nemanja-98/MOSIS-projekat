@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.tracker.FoodIntakeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/glScroll"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/VitOffWhite">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/VitDarkPurple">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vitamin_B2"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/VitOffWhite"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        android:minWidth="110dp" />
+
+                    <ProgressBar
+                        android:id="@+id/pbVitamin_B2"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="15dp"
+                        android:progressTint="@color/VitYellow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/VitDarkPurple">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vitamin_B3"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/VitOffWhite"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        android:minWidth="110dp" />
+
+                    <ProgressBar
+                        android:id="@+id/pbVitamin_B3"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="15dp"
+                        android:progressTint="@color/VitYellow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/VitDarkPurple">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vitamin_B5"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/VitOffWhite"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        android:minWidth="110dp" />
+
+                    <ProgressBar
+                        android:id="@+id/pbVitamin_B5"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="15dp"
+                        android:progressTint="@color/VitYellow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/VitDarkPurple">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vitamin_B6"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/VitOffWhite"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        android:minWidth="110dp" />
+
+                    <ProgressBar
+                        android:id="@+id/pbVitamin_B6"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="15dp"
+                        android:progressTint="@color/VitYellow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/VitDarkPurple">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vitamin_B7"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/VitOffWhite"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        android:minWidth="110dp" />
+
+                    <ProgressBar
+                        android:id="@+id/pbVitamin_B7"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="15dp"
+                        android:progressTint="@color/VitYellow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/VitDarkPurple">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vitamin_B9"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/VitOffWhite"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        android:minWidth="110dp" />
+
+                    <ProgressBar
+                        android:id="@+id/pbVitamin_B9"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="15dp"
+                        android:progressTint="@color/VitYellow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/VitDarkPurple">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vitamin_B12"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/VitOffWhite"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        android:minWidth="110dp" />
+
+                    <ProgressBar
+                        android:id="@+id/pbVitamin_B12"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="15dp"
+                        android:progressTint="@color/VitYellow" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glScroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="409dp" />
+
+        <Button
+            android:id="@+id/btnRecalibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/VitYellow"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/tracker_recalibrate"
+            android:textColor="@color/black"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/glScroll"
+            app:layout_constraintBottom_toTopOf="@id/btnProgress"/>
+
+        <Button
+            android:id="@+id/btnProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/VitYellow"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/tracker_progress"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnRecalibrate" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/VitYellow"
+        android:src="@mipmap/outline_add_black_24" />
+
+</FrameLayout>

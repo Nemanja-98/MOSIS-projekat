@@ -3,6 +3,7 @@ package elfakrs.mosis.vitaminc.vitatake;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -106,7 +108,19 @@ public class UserCalibratorActivity extends AppCompatActivity implements SeekBar
             editor.putString(WEIGHT_KEY, etWeight.getText().toString());
 
             editor.commit();
-            //ADD INTENT FOR TABED ACTIVITY!!!
+
+            Intent tracker_intent = new Intent(this, TrackerActivity.class);
+            startActivity(tracker_intent);
+        }
+        else
+        {
+            SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREF_KEY, MODE_PRIVATE);
+
+            sbAge.setProgress(sharedPreferences.getInt(AGE_KEY, 0));
+            spinGender.setSelection(sharedPreferences.getInt(GENDER_KEY, 0));
+            etHeight.setText(sharedPreferences.getString(HEIGHT_KEY, ""));
+            etWeight.setText(sharedPreferences.getString(WEIGHT_KEY, ""));
+            Toast.makeText(this, "Fill all fields", Toast.LENGTH_SHORT).show();
         }
     }
 }

@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/VitOffWhite"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         tools:context=".UserCalibratorActivity"
         tools:menu="@menu/menu_user_calibrator">
 
@@ -182,12 +182,12 @@
                     android:background="@color/VitDarkGray"
                     android:fontFamily="@font/roboto"
                     android:hint="cm"
+                    android:inputType="number"
                     android:minWidth="200dp"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textColorHint="@color/white"
-                    android:textSize="20sp"
-                    android:inputType="number" />
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -214,17 +214,18 @@
                     android:background="@color/VitDarkGray"
                     android:fontFamily="@font/roboto"
                     android:hint="kg"
+                    android:inputType="number"
                     android:minWidth="200dp"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textColorHint="@color/white"
-                    android:textSize="20sp"
-                    android:inputType="number" />
+                    android:textSize="20sp" />
             </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/button_holder"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:background="@color/VitDarkPurple"
@@ -272,9 +273,10 @@
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/glEnd"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="732dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintGuide_begin="737dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
