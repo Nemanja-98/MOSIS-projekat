@@ -34,8 +34,21 @@
     <!-- Tracker buttons -->
     <string name="tracker_recalibrate">Recalibrate calculator</string>
     <string name="tracker_progress">See progress</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Nutrients -->
+    <string name="nutrient_calories">Calories</string><!-- important -->
+    <string name="nutrient_fat">Fat</string><!-- important -->
+    <string name="nutrient_sodium">Sodium</string>
+    <string name="nutrient_choline">Choline</string>
+    <string name="nutrient_calcium">Calcium</string>
+    <string name="nutrient_iron">Iron</string>
+    <string name="nutrient_magnesium">Magnesium</string>
+    <string name="nutrient_manganese">Manganese</string>
+    <string name="nutrient_potassium">Potassium</string>
+    <string name="nutrient_selenium">Selenium</string>
+    <string name="nutrient_zink">Zink</string>
+    <string name="nutrient_protein">Protein</string><!-- important -->
+    <string name="nutrient_carbohydrate">Carbohydrate</string><!-- important -->
+    <string name="nutrient_fiber">Fiber</string>
+    <string name="nutrient_sugars">Sugars</string>
 
 </resources>
