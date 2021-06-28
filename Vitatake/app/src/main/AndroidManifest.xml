@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Vitatake">
-        <activity android:name=".TrackerActivity"></activity>
+        <activity android:name=".ProgressActivity"></activity>
+        <activity android:name=".TrackerActivity" />
         <activity android:name=".UserCalibratorActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

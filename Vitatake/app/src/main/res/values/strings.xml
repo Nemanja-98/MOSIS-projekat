@@ -50,5 +50,6 @@
     <string name="nutrient_carbohydrate">Carbohydrate</string><!-- important -->
     <string name="nutrient_fiber">Fiber</string>
     <string name="nutrient_sugars">Sugars</string>
-
+    <!-- Progress -->
+    <string name="progress_toolbar_title">Progress</string>
 </resources>

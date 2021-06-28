@@ -18,13 +18,13 @@ import java.util.ArrayList;
 
 public class UserCalibratorActivity extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener, View.OnClickListener {
 
-    private final String SAVED_BUNDLE_KEY = "StringArrayBundle";
+    private final String SAVED_BUNDLE_KEY = "UserCalSavedBundle";
 
-    private static final String SHARED_PREF_KEY = "shared_prefs";
-    private static final String AGE_KEY = "age_key";
-    private static final String GENDER_KEY = "gender_key";
-    private static final String HEIGHT_KEY = "height_key";
-    private static final String WEIGHT_KEY = "weight_key";
+    public static final String SHARED_PREF_KEY = "shared_prefs";
+    public static final String AGE_KEY = "age_key";
+    public static final String GENDER_KEY = "gender_key";
+    public static final String HEIGHT_KEY = "height_key";
+    public static final String WEIGHT_KEY = "weight_key";
 
     private SeekBar sbAge;
     private Spinner spinGender;
@@ -45,6 +45,15 @@ public class UserCalibratorActivity extends AppCompatActivity implements SeekBar
 
         Button btnFinish = (Button)findViewById(R.id.btnFinish);
         btnFinish.setOnClickListener(this);
+
+        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREF_KEY, MODE_PRIVATE);
+
+        if(sharedPreferences != null) {
+            sbAge.setProgress(sharedPreferences.getInt(AGE_KEY, 0));
+            spinGender.setSelection(sharedPreferences.getInt(GENDER_KEY, 0));
+            etHeight.setText(sharedPreferences.getString(HEIGHT_KEY, ""));
+            etWeight.setText(sharedPreferences.getString(WEIGHT_KEY, ""));
+        }
     }
 
     @Override
@@ -114,12 +123,6 @@ public class UserCalibratorActivity extends AppCompatActivity implements SeekBar
         }
         else
         {
-            SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREF_KEY, MODE_PRIVATE);
-
-            sbAge.setProgress(sharedPreferences.getInt(AGE_KEY, 0));
-            spinGender.setSelection(sharedPreferences.getInt(GENDER_KEY, 0));
-            etHeight.setText(sharedPreferences.getString(HEIGHT_KEY, ""));
-            etWeight.setText(sharedPreferences.getString(WEIGHT_KEY, ""));
             Toast.makeText(this, "Fill all fields", Toast.LENGTH_SHORT).show();
         }
     }

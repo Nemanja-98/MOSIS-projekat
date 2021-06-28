@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.tracker.VitaminsFragment"
-    android:background="@color/VitDarkGray"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -49,8 +48,16 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="15dp"
-                        android:progressTint="@color/VitYellow"
-                        android:maxWidth="10dp"/>
+                        android:progress="0"
+                        android:progressTint="@color/VitYellow" />
+
+                    <TextView
+                        android:id="@+id/tvVitamin_A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="99999/99999"
+                        android:paddingEnd="10dp"
+                        android:minWidth="97dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -76,7 +83,16 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="15dp"
+                        android:progress="0"
                         android:progressTint="@color/VitYellow" />
+
+                    <TextView
+                        android:id="@+id/tvVitamin_C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="99999/99999"
+                        android:paddingEnd="10dp"
+                        android:minWidth="97dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -102,7 +118,16 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="15dp"
+                        android:progress="0"
                         android:progressTint="@color/VitYellow" />
+
+                    <TextView
+                        android:id="@+id/tvVitamin_D"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="99999/99999"
+                        android:paddingEnd="10dp"
+                        android:minWidth="97dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -128,7 +153,16 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="15dp"
+                        android:progress="0"
                         android:progressTint="@color/VitYellow" />
+
+                    <TextView
+                        android:id="@+id/tvVitamin_E"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="99999/99999"
+                        android:paddingEnd="10dp"
+                        android:minWidth="97dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -154,7 +188,16 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="15dp"
+                        android:progress="0"
                         android:progressTint="@color/VitYellow" />
+
+                    <TextView
+                        android:id="@+id/tvVitamin_K"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="99999/99999"
+                        android:paddingEnd="10dp"
+                        android:minWidth="97dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -180,7 +223,16 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="15dp"
+                        android:progress="0"
                         android:progressTint="@color/VitYellow" />
+
+                    <TextView
+                        android:id="@+id/tvVitamin_B1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="99999/99999"
+                        android:paddingEnd="10dp"
+                        android:minWidth="97dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -206,7 +258,16 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="15dp"
+                        android:progress="0"
                         android:progressTint="@color/VitYellow" />
+
+                    <TextView
+                        android:id="@+id/tvVitamin_B2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="99999/99999"
+                        android:paddingEnd="10dp"
+                        android:minWidth="97dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -232,7 +293,16 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="15dp"
+                        android:progress="0"
                         android:progressTint="@color/VitYellow" />
+
+                    <TextView
+                        android:id="@+id/tvVitamin_B3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="99999/99999"
+                        android:paddingEnd="10dp"
+                        android:minWidth="97dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -258,7 +328,16 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="15dp"
+                        android:progress="0"
                         android:progressTint="@color/VitYellow" />
+
+                    <TextView
+                        android:id="@+id/tvVitamin_B5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="99999/99999"
+                        android:paddingEnd="10dp"
+                        android:minWidth="97dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -284,33 +363,16 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="15dp"
+                        android:progress="0"
                         android:progressTint="@color/VitYellow" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:background="@color/VitDarkPurple">
 
                     <TextView
+                        android:id="@+id/tvVitamin_B6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/vitamin_B7"
-                        android:fontFamily="@font/roboto_medium"
-                        android:textColor="@color/VitOffWhite"
-                        android:padding="10dp"
-                        android:textSize="15sp"
-                        android:minWidth="110dp" />
-
-                    <ProgressBar
-                        android:id="@+id/pbVitamin_B7"
-                        style="?android:attr/progressBarStyleHorizontal"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:padding="15dp"
-                        android:progressTint="@color/VitYellow" />
+                        android:text="99999/99999"
+                        android:paddingEnd="10dp"
+                        android:minWidth="97dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -336,7 +398,16 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="15dp"
+                        android:progress="0"
                         android:progressTint="@color/VitYellow" />
+
+                    <TextView
+                        android:id="@+id/tvVitamin_B9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="99999/99999"
+                        android:paddingEnd="10dp"
+                        android:minWidth="97dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -362,7 +433,16 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="15dp"
+                        android:progress="0"
                         android:progressTint="@color/VitYellow" />
+
+                    <TextView
+                        android:id="@+id/tvVitamin_B12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="99999/99999"
+                        android:paddingEnd="10dp"
+                        android:minWidth="97dp" />
                 </LinearLayout>
 
 
@@ -378,34 +458,35 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_begin="487dp" />
 
-        <Button
-            android:id="@+id/btnRecalibrate"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/VitYellow"
-            android:fontFamily="@font/roboto_medium"
-            android:text="@string/tracker_recalibrate"
-            android:textColor="@color/black"
-            app:layout_constraintHorizontal_bias="0.2"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/glScroll"
-            app:layout_constraintBottom_toTopOf="@id/btnProgress"/>
-
-        <Button
-            android:id="@+id/btnProgress"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/VitYellow"
-            android:fontFamily="@font/roboto_medium"
-            android:text="@string/tracker_progress"
-            android:textColor="@color/black"
+            android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintHorizontal_bias="0.11"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btnRecalibrate" />
+            app:layout_constraintTop_toBottomOf="@id/glScroll">
 
+            <Button
+                android:id="@+id/btnRecalibrateVitamin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@color/VitYellow"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/tracker_recalibrate"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnProgressVitamin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/VitYellow"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/tracker_progress"
+                android:textColor="@color/black" />
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

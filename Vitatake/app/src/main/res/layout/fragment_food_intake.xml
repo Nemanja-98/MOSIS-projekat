@@ -47,7 +47,16 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="15dp"
+                        android:progress="0"
                         android:progressTint="@color/VitYellow" />
+
+                    <TextView
+                        android:id="@+id/tvCalcium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="99999/99999"
+                        android:paddingEnd="10dp"
+                        android:minWidth="97dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -73,7 +82,16 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="15dp"
+                        android:progress="0"
                         android:progressTint="@color/VitYellow" />
+
+                    <TextView
+                        android:id="@+id/tvCholine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9999/9999"
+                        android:paddingEnd="10dp"
+                        android:minWidth="97dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -99,33 +117,16 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="15dp"
+                        android:progress="0"
                         android:progressTint="@color/VitYellow" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:background="@color/VitDarkPurple">
 
                     <TextView
+                        android:id="@+id/tvFiber"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/nutrient_iron"
-                        android:fontFamily="@font/roboto_medium"
-                        android:textColor="@color/VitOffWhite"
-                        android:padding="10dp"
-                        android:textSize="15sp"
-                        android:minWidth="110dp" />
-
-                    <ProgressBar
-                        android:id="@+id/pbIron"
-                        style="?android:attr/progressBarStyleHorizontal"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:padding="15dp"
-                        android:progressTint="@color/VitYellow" />
+                        android:text="9999/9999"
+                        android:paddingEnd="10dp"
+                        android:minWidth="97dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -151,33 +152,16 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="15dp"
+                        android:progress="0"
                         android:progressTint="@color/VitYellow" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:background="@color/VitDarkPurple">
 
                     <TextView
+                        android:id="@+id/tvMagnesium"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/nutrient_manganese"
-                        android:fontFamily="@font/roboto_medium"
-                        android:textColor="@color/VitOffWhite"
-                        android:padding="10dp"
-                        android:textSize="15sp"
-                        android:minWidth="110dp" />
-
-                    <ProgressBar
-                        android:id="@+id/pbManganese"
-                        style="?android:attr/progressBarStyleHorizontal"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:padding="15dp"
-                        android:progressTint="@color/VitYellow" />
+                        android:text="9999/9999"
+                        android:paddingEnd="10dp"
+                        android:minWidth="97dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -203,7 +187,16 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="15dp"
+                        android:progress="0"
                         android:progressTint="@color/VitYellow" />
+
+                    <TextView
+                        android:id="@+id/tvPotassium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9999/9999"
+                        android:paddingEnd="10dp"
+                        android:minWidth="97dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -229,7 +222,16 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="15dp"
+                        android:progress="0"
                         android:progressTint="@color/VitYellow" />
+
+                    <TextView
+                        android:id="@+id/tvSelenium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9999/9999"
+                        android:paddingEnd="10dp"
+                        android:minWidth="97dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -255,7 +257,16 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="15dp"
+                        android:progress="0"
                         android:progressTint="@color/VitYellow" />
+
+                    <TextView
+                        android:id="@+id/tvSodium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9999/9999"
+                        android:paddingEnd="10dp"
+                        android:minWidth="97dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -281,7 +292,16 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="15dp"
+                        android:progress="0"
                         android:progressTint="@color/VitYellow" />
+
+                    <TextView
+                        android:id="@+id/tvSugars"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9999/9999"
+                        android:paddingEnd="10dp"
+                        android:minWidth="97dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -307,10 +327,17 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="15dp"
+                        android:progress="0"
                         android:progressTint="@color/VitYellow" />
+
+                    <TextView
+                        android:id="@+id/tvZink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9999/9999"
+                        android:paddingEnd="10dp"
+                        android:minWidth="97dp" />
                 </LinearLayout>
-
-
 
             </LinearLayout>
 
@@ -328,36 +355,38 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="558dp" />
+            app:layout_constraintGuide_begin="554dp" />
 
-        <Button
-            android:id="@+id/btnRecalibrate"
+        <LinearLayout
+            android:id="@+id/llButtons"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/VitYellow"
-            android:fontFamily="@font/roboto_medium"
-            android:text="@string/tracker_recalibrate"
-            android:textColor="@color/black"
-            app:layout_constraintHorizontal_bias="0.2"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/glImportant_nutrients"
-            app:layout_constraintBottom_toTopOf="@id/btnProgress"/>
-
-        <Button
-            android:id="@+id/btnProgress"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/VitYellow"
-            android:fontFamily="@font/roboto_medium"
-            android:text="@string/tracker_progress"
-            android:textColor="@color/black"
+            android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.16"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btnRecalibrate" />
+            app:layout_constraintRight_toLeftOf="@id/tvBMI"
+            app:layout_constraintTop_toBottomOf="@id/glImportant_nutrients">
 
+            <Button
+                android:id="@+id/btnRecalibrateFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@color/VitYellow"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/tracker_recalibrate"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnProgressFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/VitYellow"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/tracker_progress"
+                android:textColor="@color/black" />
+        </LinearLayout>
         <LinearLayout
             android:id="@+id/llCalories"
             android:layout_width="wrap_content"
@@ -370,20 +399,22 @@
             android:gravity="center">
 
             <ProgressBar
-                android:id="@+id/pbCalories"
-                style="@android:style/Widget.Holo.Light.ProgressBar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:indeterminateTint="@color/VitDarkPurple"
-                android:max="100"
-                android:progress="40"
-                android:progressBackgroundTint="@color/VitDarkPurple"
-                android:progressBackgroundTintMode="src_over"
-                android:progressTint="@color/VitYellow" />
+                android:id="@+id/pbCalorie"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circular_profress_bar_background"
+                android:indeterminate="false"
+                android:progress="0"
+                android:progressDrawable="@drawable/circular_progress_bar" />
+
             <TextView
+                android:id="@+id/tvCalories"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/nutrient_calories" />
+                android:text="@string/nutrient_calories"
+                android:fontFamily="@font/roboto"
+                android:gravity="center" />
         </LinearLayout>
 
         <LinearLayout
@@ -396,16 +427,24 @@
             app:layout_constraintRight_toLeftOf="@id/llProtein"
             android:orientation="vertical"
             android:gravity="center">
+
             <ProgressBar
                 android:id="@+id/pbFat"
-                style="?android:attr/progressBarStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:progressTint="@color/VitYellow" />
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circular_profress_bar_background"
+                android:indeterminate="false"
+                android:progress="0"
+                android:progressDrawable="@drawable/circular_progress_bar" />
+
             <TextView
+                android:id="@+id/tvFat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/nutrient_fat" />
+                android:text="@string/nutrient_fat"
+                android:fontFamily="@font/roboto"
+                android:gravity="center" />
         </LinearLayout>
 
         <LinearLayout
@@ -418,16 +457,24 @@
             app:layout_constraintRight_toLeftOf="@id/llCarbohydrate"
             android:orientation="vertical"
             android:gravity="center">
+
             <ProgressBar
                 android:id="@+id/pbProtein"
-                style="?android:attr/progressBarStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:progressTint="@color/VitYellow" />
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circular_profress_bar_background"
+                android:indeterminate="false"
+                android:progress="0"
+                android:progressDrawable="@drawable/circular_progress_bar" />
+
             <TextView
+                android:id="@+id/tvProtein"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/nutrient_protein" />
+                android:text="@string/nutrient_protein"
+                android:fontFamily="@font/roboto"
+                android:gravity="center" />
         </LinearLayout>
 
         <LinearLayout
@@ -440,18 +487,39 @@
             app:layout_constraintRight_toRightOf="parent"
             android:orientation="vertical"
             android:gravity="center">
+
             <ProgressBar
                 android:id="@+id/pbCarbohydrate"
-                style="?android:attr/progressBarStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:progressTint="@color/VitYellow" />
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circular_profress_bar_background"
+                android:indeterminate="false"
+                android:progress="0"
+                android:progressDrawable="@drawable/circular_progress_bar" />
+
             <TextView
+                android:id="@+id/tvCarbohydrate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/nutrient_carbohydrate" />
+                android:text="@string/nutrient_carbohydrate"
+                android:fontFamily="@font/roboto"
+                android:gravity="center" />
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/tvBMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="TextView"
+            android:textColor="@color/VitOffWhite"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintLeft_toRightOf="@id/llButtons"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/glImportant_nutrients"
+            app:layout_constraintVertical_bias="0.13" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
