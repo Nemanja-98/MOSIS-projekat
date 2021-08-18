@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/KIC_off_white"
+        tools:context=".LoginActivity">
+
+        <TextView
+            android:id="@+id/login_tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/login"
+            android:textColor="@color/KIC_blue"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toTopOf="@id/login_llForm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/login_llForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="150dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/login_tvLogin">
+
+            <EditText
+                android:id="@+id/login_etUsername"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:backgroundTint="@color/KIC_reseda_green_light"
+                android:fontFamily="@font/roboto_medium"
+                android:hint="@string/register_username"
+                android:textColor="@color/KIC_blue" />
+
+            <EditText
+                android:id="@+id/login_etPassword"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:backgroundTint="@color/KIC_reseda_green_light"
+                android:fontFamily="@font/roboto_medium"
+                android:hint="@string/register_password"
+                android:textColor="@color/KIC_blue"
+                android:inputType="textPassword" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/KIC_blue"
+                    android:text="@string/login_no_acc"
+                    android:layout_marginBottom="10sp"/>
+                <TextView
+                    android:id="@+id/login_tvRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/KIC_reseda_green_light"
+                    android:text="@string/register"/>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/login_btnLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kic_button"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/login"
+                android:textColor="@color/KIC_off_white" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/KIC_off_white"
+        tools:context=".RegisterActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/register_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/register_llImage"
+            android:background="@color/KIC_reseda_green_dark"
+            app:titleTextColor="@color/KIC_off_white"
+            app:title="@string/btn_register"/>
+        <LinearLayout
+            android:id="@+id/register_llImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/register_toolbar"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/register_ivDisplayImg"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="48dp"
+                app:srcCompat="@drawable/ic_add_photo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_upload_image"
+                android:textColor="@color/KIC_blue"
+                android:fontFamily="@font/roboto_medium"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/register_etUsername"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/KIC_reseda_green_light"
+            android:fontFamily="@font/roboto_medium"
+            android:hint="@string/register_username"
+            android:textColor="@color/KIC_blue"
+            app:layout_constraintBottom_toTopOf="@id/register_etPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/register_llImage" />
+
+        <EditText
+            android:id="@+id/register_etPassword"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/KIC_reseda_green_light"
+            android:fontFamily="@font/roboto_medium"
+            android:hint="@string/register_password"
+            android:textColor="@color/KIC_blue"
+            app:layout_constraintBottom_toTopOf="@id/register_etName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/register_etUsername"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/register_etName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/KIC_reseda_green_light"
+            android:fontFamily="@font/roboto_medium"
+            android:hint="@string/register_name"
+            android:textColor="@color/KIC_blue"
+            app:layout_constraintBottom_toTopOf="@id/register_etSurname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/register_etPassword" />
+
+        <EditText
+            android:id="@+id/register_etSurname"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/KIC_reseda_green_light"
+            android:fontFamily="@font/roboto_medium"
+            android:hint="@string/register_surname"
+            android:textColor="@color/KIC_blue"
+            app:layout_constraintBottom_toTopOf="@id/register_etPhone_number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/register_etName" />
+
+        <EditText
+            android:id="@+id/register_etPhone_number"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/KIC_reseda_green_light"
+            android:fontFamily="@font/roboto_medium"
+            android:hint="@string/register_phone_number"
+            android:textColor="@color/KIC_blue"
+            app:layout_constraintBottom_toTopOf="@id/register_llLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/register_etSurname" />
+
+        <LinearLayout
+            android:id="@+id/register_llLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/register_btnRegister"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/register_etPhone_number">
+
+            <TextView
+                android:layout_width="163dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/register_has_acc"
+                android:textColor="@color/KIC_blue" />
+
+            <TextView
+                android:id="@+id/register_tvLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/login"
+                android:textColor="@color/KIC_reseda_green_light" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/register_btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kic_button"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/btn_register"
+            android:textColor="@color/KIC_off_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/register_llLabel" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
