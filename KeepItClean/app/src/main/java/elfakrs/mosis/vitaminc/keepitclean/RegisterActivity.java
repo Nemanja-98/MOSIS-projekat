@@ -23,11 +23,14 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+import java.util.ArrayList;
+
 import elfakrs.mosis.vitaminc.keepitclean.data.database.FirebaseDb;
 import elfakrs.mosis.vitaminc.keepitclean.data.database.Storage;
 import elfakrs.mosis.vitaminc.keepitclean.models.User;
 
 public class RegisterActivity extends AppCompatActivity {
+    static String SAVE_INSTANCE_KEY = "register_refresher";
     Uri imageUri;
     ImageView ivUploadImg;
     EditText etUsername;
@@ -50,11 +53,22 @@ public class RegisterActivity extends AppCompatActivity {
         etPhoneNumber = (EditText) findViewById(R.id.register_etPhone_number);
         TextView tvRegister = (TextView) findViewById(R.id.register_tvLogin);
 
+        if(savedInstanceState != null) {
+            ArrayList<String> values = savedInstanceState.getStringArrayList(SAVE_INSTANCE_KEY);
+
+            etUsername.setText(values.get(0));
+            etPassword.setText(values.get(1));
+            etName.setText(values.get(2));
+            etSurname.setText(values.get(3));
+            etPhoneNumber.setText(values.get(4));
+        }
+
         tvRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentLogin = new Intent(RegisterActivity.this, LoginActivity.class);
-                startActivity(intentLogin);
+//                Intent intentLogin = new Intent(RegisterActivity.this, LoginActivity.class);
+//                startActivity(intentLogin);
+                onBackPressed();
             }
         });
 
@@ -71,11 +85,11 @@ public class RegisterActivity extends AppCompatActivity {
         btnUploadButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String username = etUsername.getText().toString();
-                String password = etPassword.getText().toString();
-                String name = etName.getText().toString();
-                String surname = etSurname.getText().toString();
-                String phoneNumber = etPhoneNumber.getText().toString();
+                String username = etUsername.getText().toString().trim();
+                String password = etPassword.getText().toString().trim();
+                String name = etName.getText().toString().trim();
+                String surname = etSurname.getText().toString().trim();
+                String phoneNumber = etPhoneNumber.getText().toString().trim();
 
                 if(username == "" || password == "" || name == "" || surname == "" || phoneNumber == "" || imageUri == null)
                     return;
@@ -87,12 +101,13 @@ public class RegisterActivity extends AppCompatActivity {
                         fileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                             @Override
                             public void onSuccess(Uri uri) {
-                                User newUser = new User(username, password, name, surname, phoneNumber, uri.toString());
+                                User newUser = new User(username, password, name, surname, phoneNumber, uri.toString(), 0, 0, 0, 0);
                                 DatabaseReference dbRef = new FirebaseDb().GetDbReference("users");
                                 dbRef.child(username).setValue(newUser);
 
-                                Intent intentLogin = new Intent(RegisterActivity.this, LoginActivity.class);
-                                startActivity(intentLogin);
+//                                Intent intentLogin = new Intent(RegisterActivity.this, LoginActivity.class);
+//                                startActivity(intentLogin);
+                                onBackPressed();
                             }
                         });
                     }
@@ -120,5 +135,33 @@ public class RegisterActivity extends AppCompatActivity {
         ContentResolver cr = getContentResolver();
         MimeTypeMap mime = MimeTypeMap.getSingleton();
         return "." + mime.getExtensionFromMimeType(cr.getType(uri));
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        ArrayList<String> saveBundle = new ArrayList<String>();
+
+        saveBundle.add(etUsername.getText().toString());
+        saveBundle.add(etPassword.getText().toString());
+        saveBundle.add(etName.getText().toString());
+        saveBundle.add(etSurname.getText().toString());
+        saveBundle.add(etPhoneNumber.getText().toString());
+
+        outState.putStringArrayList(SAVE_INSTANCE_KEY, saveBundle);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        ArrayList<String> values = savedInstanceState.getStringArrayList(SAVE_INSTANCE_KEY);
+
+        etUsername.setText(values.get(0));
+        etPassword.setText(values.get(1));
+        etName.setText(values.get(2));
+        etSurname.setText(values.get(3));
+        etPhoneNumber.setText(values.get(4));
     }
 }

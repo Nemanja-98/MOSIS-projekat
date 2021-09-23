@@ -7,4 +7,8 @@ public class Storage {
     public StorageReference GetReference() {
         return FirebaseStorage.getInstance().getReference();
     }
+
+    public StorageReference GetReferenceFromUrl(String url) {
+        return FirebaseStorage.getInstance().getReferenceFromUrl(url);
+    }
 }

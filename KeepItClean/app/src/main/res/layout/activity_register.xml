@@ -21,10 +21,9 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/register_llImage"
             android:background="@color/KIC_reseda_green_dark"
             app:titleTextColor="@color/KIC_off_white"
-            app:title="@string/btn_register"/>
+            app:title="@string/btn_register" />
         <LinearLayout
             android:id="@+id/register_llImage"
             android:layout_width="match_parent"

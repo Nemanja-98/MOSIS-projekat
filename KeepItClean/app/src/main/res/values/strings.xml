@@ -7,10 +7,62 @@
     <string name="register_surname">Surname</string>
     <string name="register_phone_number">Phone number</string>
     <string name="register_upload_image">Upload image</string>
-    <string name="login">Login</string>
-    <string name="login_no_acc">Don\'t have an account? </string>
     <string name="register_has_acc">Already have an account? </string>
     <string name="register">Register</string>
 
+    <string name="login">Login</string>
+    <string name="login_no_acc">Don\'t have an account? </string>
+
+    <string name="map">Map</string>
+    <string name="menu_report_litter">Report litter</string>
+    <string name="menu_add_friend">Add friend</string>
+    <string name="menu_my_reported_litter">My reported litter</string>
+    <string name="menu_start_service">Turn on notifications</string>
+    <string name="menu_stop_service">Turn off notifications</string>
+    <string name="menu_logout">Logout</string>
+
     <string name="btn_register">Register</string>
+
+    <string name="main_tab_map">Map</string>
+    <string name="main_tab_leaderboards">Leaderboards</string>
+    <string name="main_show">Showing: </string>
+    <string name="main_filter">Show </string>
+    <string-array name="main_spinner_options">
+        <item>Litter</item>
+        <item>Users</item>
+        <item>Litter and Users</item>
+    </string-array>
+    <string name="main_search">Search</string>
+    <string-array name="main_filter_spinner_options">
+        <item>All</item>
+        <item>Graffiti cleaning</item>
+        <item>Park cleaning</item>
+        <item>Statue cleaning</item>
+        <item>Street cleaning</item>
+        <item>Radius</item>
+    </string-array>
+    <string name="main_radius">Radius(meters)</string>
+
+    <string name="bluetooth_add_friend">Add friend</string>
+    <string name="bluetooth_connect">Connect</string>
+    <string name="bluetooth_discoverable">Discoverable: </string>
+    <string name="bluetooth_discover">Discover</string>
+
+    <string name="user_info_points">Points</string>
+
+    <string name="add_litter_title">Report litter</string>
+    <string name="add_litter_litter_title">Title</string>
+    <string name="add_litter_description">Describe the problem</string>
+    <string name="add_litter_report">Report</string>
+    <string-array name="add_litter_action_spinner_options">
+        <item>Select event type</item>
+        <item>Graffiti cleaning</item>
+        <item>Park cleaning</item>
+        <item>Statue cleaning</item>
+        <item>Street cleaning</item>
+    </string-array>
+
+    <string name="my_reported_litter_title">Reported litter</string>
+    <string name="litter_list_adapter_complete">Complete</string>
+    <string name="litter_list_adapter_delete">Delete</string>
 </resources>

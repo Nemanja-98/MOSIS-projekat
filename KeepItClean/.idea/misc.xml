@@ -3,10 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/-4thGrade-/MOSIS/KeepItClean/app/src/main/res/drawable/baseline_more_vert_18.xml" value="0.290625" />
+        <entry key="..\:/-4thGrade-/MOSIS/KeepItClean/app/src/main/res/drawable/baseline_more_vert_20.xml" value="0.290625" />
+        <entry key="..\:/-4thGrade-/MOSIS/KeepItClean/app/src/main/res/drawable/ic_add_photo.xml" value="0.290625" />
+        <entry key="..\:/-4thGrade-/MOSIS/KeepItClean/app/src/main/res/drawable/ic_baseline_location_on_24.xml" value="0.290625" />
+        <entry key="..\:/-4thGrade-/MOSIS/KeepItClean/app/src/main/res/drawable/kic_avatar_circle.xml" value="0.290625" />
+        <entry key="..\:/-4thGrade-/MOSIS/KeepItClean/app/src/main/res/drawable/kic_background_border.xml" value="0.290625" />
+        <entry key="..\:/-4thGrade-/MOSIS/KeepItClean/app/src/main/res/drawable/kic_background_border_user.xml" value="0.290625" />
         <entry key="..\:/-4thGrade-/MOSIS/KeepItClean/app/src/main/res/drawable/kic_button.xml" value="0.290625" />
+        <entry key="..\:/-4thGrade-/MOSIS/KeepItClean/app/src/main/res/layout/activity_add_friend.xml" value="0.22192028985507245" />
+        <entry key="..\:/-4thGrade-/MOSIS/KeepItClean/app/src/main/res/layout/activity_add_litter.xml" value="0.20260416666666667" />
         <entry key="..\:/-4thGrade-/MOSIS/KeepItClean/app/src/main/res/layout/activity_login.xml" value="0.2617753623188406" />
-        <entry key="..\:/-4thGrade-/MOSIS/KeepItClean/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
+        <entry key="..\:/-4thGrade-/MOSIS/KeepItClean/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/-4thGrade-/MOSIS/KeepItClean/app/src/main/res/layout/activity_my_reported_litter.xml" value="0.2554347826086957" />
         <entry key="..\:/-4thGrade-/MOSIS/KeepItClean/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/-4thGrade-/MOSIS/KeepItClean/app/src/main/res/layout/activity_user_details.xml" value="0.26313405797101447" />
+        <entry key="..\:/-4thGrade-/MOSIS/KeepItClean/app/src/main/res/layout/device_adapter_view.xml" value="0.21739130434782608" />
+        <entry key="..\:/-4thGrade-/MOSIS/KeepItClean/app/src/main/res/layout/fragment_leaderboard.xml" value="0.23641304347826086" />
+        <entry key="..\:/-4thGrade-/MOSIS/KeepItClean/app/src/main/res/layout/fragment_map.xml" value="0.23641304347826086" />
+        <entry key="..\:/-4thGrade-/MOSIS/KeepItClean/app/src/main/res/layout/reported_litter_view.xml" value="0.2554347826086957" />
+        <entry key="..\:/-4thGrade-/MOSIS/KeepItClean/app/src/main/res/layout/user_adapter_view.xml" value="0.24728260869565216" />
+        <entry key="..\:/-4thGrade-/MOSIS/KeepItClean/app/src/main/res/menu/map_menu.xml" value="0.27447916666666666" />
       </map>
     </option>
   </component>

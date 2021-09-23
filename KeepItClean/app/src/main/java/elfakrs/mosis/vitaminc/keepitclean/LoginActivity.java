@@ -7,6 +7,7 @@ import androidx.appcompat.widget.AppCompatButton;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -17,12 +18,15 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 
+import java.net.URI;
+import java.util.ArrayList;
+
 import elfakrs.mosis.vitaminc.keepitclean.data.database.FirebaseDb;
+import elfakrs.mosis.vitaminc.keepitclean.data.local_data.SharedPrefManager;
 import elfakrs.mosis.vitaminc.keepitclean.models.User;
 
 public class LoginActivity extends AppCompatActivity {
-    public static String SHARED_PREFERENCES_KEY = "KIC_UserShared";
-    public static String USERNAME_KEY = "KIC_User_Username";
+    static String SAVE_INSTANCE_KEY = "login_refresher";
     EditText etUsername;
     EditText etPassword;
 
@@ -34,6 +38,14 @@ public class LoginActivity extends AppCompatActivity {
         etUsername = (EditText) findViewById(R.id.login_etUsername);
         etPassword = (EditText) findViewById(R.id.login_etPassword);
         TextView tvRegister = (TextView) findViewById(R.id.login_tvRegister);
+
+        if(savedInstanceState != null) {
+            ArrayList<String> values = savedInstanceState.getStringArrayList(SAVE_INSTANCE_KEY);
+
+            etUsername.setText(values.get(0));
+            etPassword.setText(values.get(1));
+
+        }
 
         tvRegister.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,16 +73,16 @@ public class LoginActivity extends AppCompatActivity {
                             if(snapshot.exists())
                             {
                                 User user = snapshot.getValue(User.class);
-                                if(!(user.getPassword().equals(password))){
+                                if(!(user.getPassword().equals(password))) {
                                     Toast.makeText(LoginActivity.this, "Password does not match.", Toast.LENGTH_SHORT).show();
                                     return;
                                 }
-                                SharedPreferences shared = getSharedPreferences(SHARED_PREFERENCES_KEY, MODE_PRIVATE);
-                                SharedPreferences.Editor editor = shared.edit();
 
-                                editor.putString(USERNAME_KEY, user.getUsername());
-
-                                editor.apply();
+                                try {
+                                    SharedPrefManager sharedManager = SharedPrefManager.getInstance();
+                                    sharedManager.saveUsername(LoginActivity.this, username);
+                                }
+                                catch (Exception e) {}
 
                                 Intent intentMain = new Intent(LoginActivity.this, MainActivity.class);
                                 startActivity(intentMain);
@@ -87,5 +99,27 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        ArrayList<String> saveBundle = new ArrayList<String>();
+
+        saveBundle.add(etUsername.getText().toString());
+        saveBundle.add(etPassword.getText().toString());
+
+        outState.putStringArrayList(SAVE_INSTANCE_KEY, saveBundle);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        ArrayList<String> values = savedInstanceState.getStringArrayList(SAVE_INSTANCE_KEY);
+
+        etUsername.setText(values.get(0));
+        etPassword.setText(values.get(1));
     }
 }
