@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFriendActivity"
+    android:background="@color/KIC_off_white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bluetooth_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/KIC_reseda_green_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/bluetooth_add_friend"
+            android:textColor="@color/KIC_off_white"
+            android:textSize="20sp" />
+
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/bluetooth_switchBluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:backgroundTint="@color/KIC_blue"
+            android:buttonTint="@color/KIC_off_white"
+            tools:layout_editor_absoluteX="357dp"
+            tools:layout_editor_absoluteY="4dp" />
+
+        <ImageView
+            android:id="@+id/bluetooth_ivBluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/ic_baseline_bluetooth_off_24" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/bluetooth_tvDiscoverable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/bluetooth_discoverable"
+        android:textColor="@color/KIC_blue"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bluetooth_toolbar" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/bluetooth_switchDiscoverable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/KIC_blue"
+        android:buttonTint="@color/KIC_off_white"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toRightOf="@id/bluetooth_tvDiscoverable"
+        app:layout_constraintTop_toBottomOf="@id/bluetooth_toolbar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bluetooth_btnDiscover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@drawable/kic_button"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/bluetooth_discover"
+        android:textColor="@color/KIC_off_white"
+        app:layout_constraintTop_toBottomOf="@id/bluetooth_toolbar"
+        app:layout_constraintRight_toRightOf="parent"
+        android:visibility="invisible" />
+
+    <ListView
+        android:id="@+id/bluetooth_lvDevices"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bluetooth_btnDiscover"
+        app:layout_constraintBottom_toTopOf="@id/bluetooth_btnAddFriend"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bluetooth_btnAddFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@drawable/kic_button"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/bluetooth_add_friend"
+        android:textColor="@color/KIC_off_white"
+        app:layout_constraintTop_toBottomOf="@id/bluetooth_lvDevices"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bluetooth_btnConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@drawable/kic_button"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/bluetooth_connect"
+        android:textColor="@color/KIC_off_white"
+        app:layout_constraintTop_toBottomOf="@id/bluetooth_lvDevices"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

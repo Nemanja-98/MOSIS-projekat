@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AddLitterActivity"
+        android:background="@color/KIC_off_white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/add_litter_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/KIC_reseda_green_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/add_litter_title"
+                android:textColor="@color/KIC_off_white"
+                android:textSize="20sp" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <EditText
+            android:id="@+id/add_litter_etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/KIC_reseda_green_light"
+            android:fontFamily="@font/roboto_medium"
+            android:hint="@string/add_litter_litter_title"
+            android:textColor="@color/KIC_blue"
+            app:layout_constraintBottom_toTopOf="@id/add_litter_spinAction"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/add_litter_toolbar"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"/>
+
+        <Spinner
+            android:id="@+id/add_litter_spinAction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/add_litter_etTitle"
+            app:layout_constraintBottom_toTopOf="@id/add_litter_tvAddDescription"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/add_litter_tvAddDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/add_litter_spinAction"
+            app:layout_constraintBottom_toTopOf="@id/add_litter_etDescription"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/KIC_reseda_green_light"
+            android:textSize="20sp"
+            android:text="@string/add_litter_description"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"/>
+
+        <EditText
+            android:id="@+id/add_litter_etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/add_litter_tvAddDescription"
+            android:inputType="textMultiLine"
+            android:textColor="@color/KIC_blue"
+            android:background="@drawable/kic_background_border"
+            android:gravity="top|left"
+            android:scrollbars="vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_litter_btnReportLitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kic_button"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/add_litter_report"
+            android:textColor="@color/KIC_off_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="20dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

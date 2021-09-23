@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_report_litter"
+        android:title="@string/menu_report_litter" />
+    <item
+        android:id="@+id/menu_my_reported_litter"
+        android:title="@string/menu_my_reported_litter" />
+    <item
+        android:id="@+id/menu_add_friend"
+        android:title="@string/menu_add_friend" />
+    <item
+        android:id="@+id/menu_service"
+        android:title="@string/menu_start_service" />
+    <item
+        android:id="@+id/menu_logout"
+        android:title="@string/menu_logout" />
+</menu>
